@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Georgia', serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+header h1 {
+    color: #d65d7b;
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 5rem;
+    font-stretch: expanded;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d65d7b;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#dono {
+    font-family: 'VT323';
+}
+
+/* About Section */
+.about-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #d65d7b;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Photo Gallery */
+.gallery {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.gallery h3 {
+    font-size: 2rem;
+    color: #d65d7b;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .gallery-grid img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
